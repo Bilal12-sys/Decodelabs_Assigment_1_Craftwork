@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/assets/Craftwork_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery | Craftwork</title>
+</head>
+<body>
+    <header class="top_header" id="top">
+        <nav class="navbar">
+            <a href="index.html" class="brand">
+                <img src="images/assets/Craftwork_Logo.png" alt="Craftwork Logo" class="logo">
+                <span class="brand_name">Craftwork</span>
+            </a>
+            <ul class="nav_links" aria-label="Main navigation">
+                <li><a href="index.html"><svg class="nav_icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a></li>
+                <li><a href="Gallery.html" class="active" aria-current="page"><svg class="nav_icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg><span>Gallery</span></a></li>
+                <li><a href="about.html"><svg class="nav_icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg><span>About</span></a></li>
+                <li><a href="contact.html"><svg class="nav_icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="top_Gallery_images">
+            <div class="gallery_toolbar">
+                <div class="heading">
+                    <h1>Gallery</h1>
+                    <p>Browse all images from our creative collections.</p>
+                </div>
+                <form class="gallery_search" id="gallery-search-form">
+                    <div class="gallery_search_control">
+                        <input id="gallery-search" type="search" list="gallery-categories" placeholder="Try Nature or Cars">
+                        <datalist id="gallery-categories">
+                            <option value="Architecture"></option>
+                            <option value="Bikes"></option>
+                            <option value="Cars"></option>
+                            <option value="Graphic Design"></option>
+                            <option value="Interior Design"></option>
+                            <option value="Nature"></option>
+                        </datalist>
+                        <button type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+            <p class="gallery_loader hidden" id="gallery-loader" role="status">
+                <span class="gallery_loader_spinner" aria-hidden="true"></span>
+                Loading images...
+            </p>
+            <div class="Gallery_Images" id="gallery-images"></div>
+        </section>
+    </main>
+
+    <footer class="site_footer">
+        <div class="footer_inner">
+            <section class="footer_cta">
+                <div>
+                    <p class="footer_eyebrow">LET'S MAKE SOMETHING MEANINGFUL</p>
+                    <h2>Have an idea worth sharing?</h2>
+                    <p>Let’s shape it into something thoughtful, useful, and beautifully made.</p>
+                </div>
+                <a class="footer_cta_link" href="contact.html">Start a conversation <span aria-hidden="true">&rarr;</span></a>
+            </section>
+            <div class="footer_main">
+                <div class="footer_about">
+                    <a href="index.html" class="footer_brand">
+                        <img src="images/assets/Craftwork_Logo.png" alt="" class="footer_logo">
+                        <span>Craftwork</span>
+                    </a>
+                    <p class="footer_description">Thoughtful creations where timeless artistry meets modern design. Explore work crafted to inspire, elevate, and bring ideas to life.</p>
+                </div>
+                <nav class="footer_navigation" aria-label="Footer navigation">
+                    <h3>Explore</h3>
+                    <a href="index.html">Home</a>
+                    <a href="Gallery.html">Gallery</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="footer_contact">
+                    <h3>Say hello</h3>
+                    <a href="mailto:hello@craftwork.com">hello@craftwork.com</a>
+                    <p>Lahore, Pakistan</p>
+                </div>
+            </div>
+            <div class="footer_watermark" aria-hidden="true">Craftwork</div>
+            <div class="footer_bottom">
+                <p>&copy; 2026 Craftwork. All rights reserved.</p>
+                <p>Made by <span>Syed Bilal Ali</span> for DecodeLabs.</p>
+                <a href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="gallery.js"></script>
+</body>
+</html>
