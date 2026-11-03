@@ -22,6 +22,10 @@ html {
     scroll-behavior: smooth;
 }
 
+::selection {
+    color: var(--white);
+    background: var(--primary);
+}
 body {
     overflow-x: clip;
     background: var(--white);
