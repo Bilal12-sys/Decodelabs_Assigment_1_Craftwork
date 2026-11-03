@@ -6,7 +6,7 @@ There is no framework, build step, or package installation required. The site is
 
 ## Live demo
 
-**Live site:** Add the deployed website URL here once the project is published.
+**Live site:** https://bilal12-sys.github.io/Decodelabs_Assigment_1_Craftwork/
 
 ## Features
 
